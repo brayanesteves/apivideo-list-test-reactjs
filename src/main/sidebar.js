@@ -33,19 +33,19 @@ const Sidebar = () => {
             </ul>
             <h4 className="menu-group-label">Library</h4>
             <ul className="menu-group">
-                {libraryMenus.map(menu => (
+                {libraryMenus.map(menu_1 => (
                     <li className="menu-item">
-                        <i className={menu.icon}></i>
-                        <span className="text">{menu.text}</span>
+                        <i className={menu_1.icon}></i>
+                        <span className="text">{menu_1.text}</span>
                     </li>
                 ))}
             </ul>
             <h4 className="menu-group-label">Best of Youtube</h4>
             <ul className="menu-group">
-                {bestMenus.map(menu => (
+                {bestMenus.map(menu_2 => (
                     <li className="menu-item">
-                        <i className={menu.icon}></i>
-                        <span className="text">{menu.text}</span>
+                        <i className={menu_2.icon}></i>
+                        <span className="text">{menu_2.text}</span>
                     </li>
                 ))}
             </ul>
@@ -53,4 +53,4 @@ const Sidebar = () => {
     )
 }
 
-export default Sidebar
+export default Sidebar;

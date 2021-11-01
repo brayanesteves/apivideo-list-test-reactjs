@@ -37,23 +37,7 @@ const HomeContent = () => {
             setPersons(res.data);
           }).catch(err => { console.log(err); });
       }
-      function renderPersons(usr) {
-        return (
-          <div className="list-wrapper">
-            <ul className="list">
-              <li className="list-item">
-                <div>
-                  <img src={usr.avatar_url} className="list-item-image" />
-                </div>
-                <div className="list-item-content"  onClick={() => getDetails(usr.login)} key={usr.id}>
-                  <h4>{usr.login}</h4>
-                  <p>@{usr.login}</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        );
-      } 
+      
     return (
         <div className="home-content">
             <VideosRow 

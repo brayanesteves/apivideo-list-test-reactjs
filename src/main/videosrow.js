@@ -3,7 +3,7 @@ import Video from "./video";
 import axios from 'axios';
 import './assets/css/styles.css';
 const VideosRow = (props) => {
-    const { type, label, videos, channel } = props
+    const { type, label, videos, channel } = props;
     const renderRowLabel = () => {
         if (type === 'normal') {
             return <h3 className="videos-row-label">{label}</h3>
