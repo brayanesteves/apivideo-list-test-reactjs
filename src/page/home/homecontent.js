@@ -33,7 +33,7 @@ const HomeContent = () => {
             url: url,
           }).then(res => {
             setLoading(false);
-            console.log(res.data);
+            //console.log(res.data);
             setPersons(res.data);
           }).catch(err => { console.log(err); });
       }
